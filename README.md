@@ -21,7 +21,7 @@
 ## 🚀 Deploy
 
 ```bash
-git clone https://github.com/YOU/siteghost.git
+git clone https://github.com/ryzenofficial715-gif/siteghost.git
 cd siteghost
 npm install
 vercel deploy
