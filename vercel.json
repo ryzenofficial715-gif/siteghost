@@ -1,1 +1,23 @@
-
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/rip.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/rip.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "public/$1"
+    }
+  ]
+}
